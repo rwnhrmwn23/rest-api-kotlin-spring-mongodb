@@ -13,8 +13,8 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '8'
-        - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-          with:
-            heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-            heroku_app_name: "rest-api-kotlin-spring-mongodb"
-            heroku_email: "rwnhermawan@gmail.com"
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "rest-api-kotlin-spring-mongodb"
+          heroku_email: "rwnhermawan@gmail.com"
